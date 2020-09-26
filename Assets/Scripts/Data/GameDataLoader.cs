@@ -25,7 +25,8 @@ public class GameDataLoader : MonoBehaviour
         {
             if (PlayerPrefs.HasKey(name))
             {
-                GameData.Add(new GameLevelData {
+                GameData.Add(new GameLevelData 
+                {
                     Name = name,
                     MaxCoins = PlayerPrefs.GetInt(name)
                 });
